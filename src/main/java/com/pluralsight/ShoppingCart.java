@@ -60,5 +60,13 @@ public class ShoppingCart {
   }
   setOrderTotal(dblTotal);
  }
+ 
+ public void updateCartItem(int index, int quantity) {
+	 CartItem item = getCartItem(index);
+	 
+	 if (item != null) {
+		 item.setQuantity(quantity);
+	 }
+ }
 
 }
